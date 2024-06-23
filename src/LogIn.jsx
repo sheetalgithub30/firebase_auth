@@ -3,6 +3,7 @@ import { signInWithEmailAndPassword } from "firebase/auth";
 
 import { auth } from "./firebase";
 import { useNavigate } from "react-router-dom";
+import Navbar from './Navbar'
 
 export default function LogIn() {
   const [email, setEmail] = useState("");
@@ -17,6 +18,8 @@ export default function LogIn() {
   };
 
   return (
+    <>
+             <Navbar/>
     <div id="login">
       <h1>Login</h1>
       <form onSubmit={login}>
@@ -41,5 +44,6 @@ export default function LogIn() {
 </div>
       </form>
     </div>
+    </>
   );
 }

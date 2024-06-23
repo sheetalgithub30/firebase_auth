@@ -3,9 +3,11 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: white;
 }
 #root{
-    background:linear-gradient(rgb(141, 141, 141),rgb(39, 38, 38));
+    background-image: url("https://img.freepik.com/free-vector/gradient-network-connection-background_23-2148881320.jpg?w=996&t=st=1719127537~exp=1719128137~hmac=50c2941254a0edb046c37eec79e142eb889b84563fe1871c40546fb6f3655be3");
+    background-size: cover;
     width: 100vw;
     height: 100vh;
     display: flex;
@@ -18,7 +20,10 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    box-shadow: 2px 2px 7px white;
+    box-shadow: 1px 1px 5px white;
+    border: 1px solid white;
+    filter: drop-shadow(1px 1px 1px white);
+    border-radius: 40px;
 }
 h1{
     font-size: 3rem;
@@ -30,7 +35,6 @@ input{
     margin: 0.5rem;
     padding: 0.5rem;
     background-color: transparent;
-    color: white;
     border: 1px solid rgb(251, 249, 249);
 }
 
@@ -45,7 +49,7 @@ input::placeholder {
 #button input{
     padding: 0.5rem 1rem;
     background-color: rgb(72, 255, 0);
-    color: white;
+    color: black;
     border-radius: 20px;
     border: none;
 }
@@ -53,14 +57,15 @@ input::placeholder {
     font-size: 1.5rem;
     padding: 0.5rem 1rem;
     background-color: red;
-    color: white;
+    color: black;
     border-radius: 20px;
     border: none;
+    filter: drop-shadow(1px 1px 3px white);
+    
 }
 #navbar{
     position: fixed;
     top:0;
-    background-color: rgb(141, 141, 219);
     width: 100vw;
     display: flex;
     padding: 1rem 2rem;
@@ -71,8 +76,6 @@ input::placeholder {
     font-size: 1.5rem;
     padding: 1rem;
     text-decoration: none;
-    color: white;
-    text-shadow:2px 3px 2px black;
 }
 
 

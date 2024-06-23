@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { createUserWithEmailAndPassword, updateProfile } from "firebase/auth";
 
 import { auth } from "./firebase.js";
+import Navbar from "./Navbar.jsx";
 
 export default function Register() {
   const [email, setEmail] = useState("");
@@ -22,6 +23,8 @@ export default function Register() {
   };
 
   return (
+    <>
+    <Navbar/>
     <div id="register">
       <h1>Signup</h1>
       <form onSubmit={handleSignup}>
@@ -52,5 +55,7 @@ export default function Register() {
         </div>
       </form>
     </div>
+    </>
+
   );
 }

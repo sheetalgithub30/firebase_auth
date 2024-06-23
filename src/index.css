@@ -6,8 +6,9 @@
     color: white;
 }
 #root{
-    background-image: url("https://img.freepik.com/free-vector/gradient-network-connection-background_23-2148881320.jpg?w=996&t=st=1719127537~exp=1719128137~hmac=50c2941254a0edb046c37eec79e142eb889b84563fe1871c40546fb6f3655be3");
-    background-size: cover;
+    background-image: url(./assets/background.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
     width: 100vw;
     height: 100vh;
     display: flex;

@@ -13,18 +13,22 @@ export default function Home() {
     }
   }, []);
 
-  // const logout = () => {
-  //   signOut(auth)
-  //     .then(() => navigate("/"))
-  //     .catch((err) => alert(err.message));
-  // };
+  const logout = () => {
+    signOut(auth)
+      .then(() => navigate("/"))
+      .catch((err) => alert(err.message));
+  };
 
   console.log(auth.currentUser);
 
   return (
     <div>
-      <h1>Welcome User {auth.currentUser && auth.currentUser.displayName} </h1>
-      {/* {auth.currentUser && <button onClick={logout}>Logout</button>} */}
+      <h1>Welcome {auth.currentUser && auth.currentUser.displayName} !! </h1>
+      {auth.currentUser && 
+      <div id="logOut">
+      <button onClick={logout}>Logout</button>
+      </div>
+      }
     </div>
   );
 }

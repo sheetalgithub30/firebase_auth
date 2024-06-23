@@ -11,7 +11,6 @@ export default function LogIn() {
 
   const login = (e) => {
     e.preventDefault();
-    
     signInWithEmailAndPassword(auth, email, pass)
       .then(() => navigate("/home"))
       .catch((err) => alert(err.message));

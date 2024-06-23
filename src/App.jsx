@@ -3,16 +3,18 @@ import Register from './Register'
 import LogIn from './LogIn'
 import Home from './Home'
 import { Route, Routes } from 'react-router-dom'
+import Navbar from './Navbar'
 
 function App() {
   return (
-    <div>
+    <>
+      <Navbar/>
      <Routes>
       <Route path="/" element={<LogIn/>}></Route>
       <Route path ="/register" element={<Register/>}></Route>
       <Route path="/home" element={<Home/>}></Route>
      </Routes>
-    </div>
+    </>
   )
 }
 
